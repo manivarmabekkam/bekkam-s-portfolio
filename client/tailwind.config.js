@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
@@ -9,7 +9,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin'),
-    require('tailwind-scrollbar'),
+    import('flowbite/plugin'),
+    import('tailwind-scrollbar'),
   ],
 };
